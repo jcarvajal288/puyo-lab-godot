@@ -175,8 +175,10 @@ animations = [{
 size = Vector2(32, 32)
 
 [node name="Puyo" type="RigidBody2D"]
+position = Vector2(16, 16)
 gravity_scale = 0.0
 script = ExtResource("1_tvoud")
+metadata/_edit_group_ = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_xisse")

@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://h758j0enql28"]
+
+[ext_resource type="Script" path="res://scripts/play_field.gd" id="1_6u585"]
+[ext_resource type="Texture2D" uid="uid://84oq27kpw8ua" path="res://img/playBorder.png" id="1_epw4m"]
+
+[node name="PlayField" type="Node2D"]
+script = ExtResource("1_6u585")
+
+[node name="Border" type="TextureRect" parent="."]
+offset_left = -8.0
+offset_top = -8.0
+offset_right = 200.0
+offset_bottom = 424.0
+texture = ExtResource("1_epw4m")

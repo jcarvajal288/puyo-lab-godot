@@ -1,88 +1,11 @@
-[gd_scene load_steps=5 format=3 uid="uid://c4yf2td3i620m"]
+[gd_scene load_steps=3 format=3 uid="uid://c4yf2td3i620m"]
 
 [ext_resource type="PackedScene" uid="uid://ulptxe83r0l0" path="res://Background.tscn" id="1_jxbtx"]
-[ext_resource type="PackedScene" uid="uid://c70ccg0is1ovi" path="res://puyo.tscn" id="2_44adn"]
-[ext_resource type="Texture2D" uid="uid://84oq27kpw8ua" path="res://img/playBorder.png" id="2_ipsbl"]
-[ext_resource type="PackedScene" uid="uid://c8lc3bmoo15tg" path="res://puyo_pair.tscn" id="4_asib3"]
+[ext_resource type="PackedScene" uid="uid://h758j0enql28" path="res://play_field.tscn" id="2_2pof0"]
 
 [node name="Main" type="Node"]
 
 [node name="ChalkboardBackground" parent="." instance=ExtResource("1_jxbtx")]
 
-[node name="PlayBorder" type="TextureRect" parent="."]
-offset_left = 56.0
-offset_top = 56.0
-offset_right = 264.0
-offset_bottom = 488.0
-texture = ExtResource("2_ipsbl")
-
-[node name="Puyo" parent="PlayBorder" instance=ExtResource("2_44adn")]
-position = Vector2(24, 408)
-
-[node name="Puyo7" parent="PlayBorder" instance=ExtResource("2_44adn")]
-position = Vector2(24, 376)
-color = 1
-
-[node name="Puyo8" parent="PlayBorder" instance=ExtResource("2_44adn")]
-position = Vector2(24, 344)
-color = 2
-
-[node name="Puyo9" parent="PlayBorder" instance=ExtResource("2_44adn")]
-position = Vector2(24, 312)
-color = 3
-
-[node name="Puyo10" parent="PlayBorder" instance=ExtResource("2_44adn")]
-position = Vector2(24, 280)
-color = 4
-
-[node name="Puyo11" parent="PlayBorder" instance=ExtResource("2_44adn")]
-position = Vector2(24, 248)
-
-[node name="Puyo12" parent="PlayBorder" instance=ExtResource("2_44adn")]
-position = Vector2(24, 216)
-color = 1
-
-[node name="Puyo13" parent="PlayBorder" instance=ExtResource("2_44adn")]
-position = Vector2(24, 184)
-color = 2
-
-[node name="Puyo14" parent="PlayBorder" instance=ExtResource("2_44adn")]
-position = Vector2(24, 152)
-color = 3
-
-[node name="Puyo15" parent="PlayBorder" instance=ExtResource("2_44adn")]
-position = Vector2(24, 120)
-color = 4
-
-[node name="Puyo16" parent="PlayBorder" instance=ExtResource("2_44adn")]
-position = Vector2(24, 88)
-
-[node name="Puyo17" parent="PlayBorder" instance=ExtResource("2_44adn")]
-position = Vector2(24, 56)
-color = 1
-
-[node name="Puyo18" parent="PlayBorder" instance=ExtResource("2_44adn")]
-position = Vector2(24, 24)
-color = 2
-
-[node name="Puyo2" parent="PlayBorder" instance=ExtResource("2_44adn")]
-position = Vector2(56, 408)
-color = 3
-
-[node name="Puyo3" parent="PlayBorder" instance=ExtResource("2_44adn")]
-position = Vector2(88, 408)
-color = 4
-
-[node name="Puyo4" parent="PlayBorder" instance=ExtResource("2_44adn")]
-position = Vector2(120, 408)
-
-[node name="Puyo5" parent="PlayBorder" instance=ExtResource("2_44adn")]
-position = Vector2(152, 408)
-color = 1
-
-[node name="Puyo6" parent="PlayBorder" instance=ExtResource("2_44adn")]
-position = Vector2(184, 408)
-color = 2
-
-[node name="PuyoPair" parent="PlayBorder" instance=ExtResource("4_asib3")]
-position = Vector2(72, 72)
+[node name="PlayField" parent="." instance=ExtResource("2_2pof0")]
+position = Vector2(64, 64)
