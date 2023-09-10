@@ -1,11 +1,11 @@
 [gd_scene load_steps=3 format=3 uid="uid://c4yf2td3i620m"]
 
-[ext_resource type="PackedScene" uid="uid://ulptxe83r0l0" path="res://Background.tscn" id="1_jxbtx"]
-[ext_resource type="PackedScene" uid="uid://h758j0enql28" path="res://play_field.tscn" id="2_2pof0"]
+[ext_resource type="PackedScene" uid="uid://ulptxe83r0l0" path="res://scenes/Background.tscn" id="1_jxbtx"]
+[ext_resource type="PackedScene" uid="uid://h758j0enql28" path="res://scenes/play_field.tscn" id="2_2pof0"]
 
 [node name="Main" type="Node"]
 
-[node name="ChalkboardBackground" parent="." instance=ExtResource("1_jxbtx")]
+[node name="Background" parent="." instance=ExtResource("1_jxbtx")]
 
 [node name="PlayField" parent="." instance=ExtResource("2_2pof0")]
 position = Vector2(64, 64)

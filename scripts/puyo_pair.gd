@@ -11,8 +11,8 @@ func _process(delta):
 	pass
 
 func _init():
-	var puyo1 = preload("res://puyo.tscn").instantiate()
-	var puyo2 = preload("res://puyo.tscn").instantiate()
+	var puyo1 = preload("res://scenes/puyo.tscn").instantiate()
+	var puyo2 = preload("res://scenes/puyo.tscn").instantiate()
 	puyo1.color = randi() % 5
 	puyo2.color = randi() % 5
 	puyo2.position.x += 32
