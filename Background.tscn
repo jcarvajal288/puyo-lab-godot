@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://ulptxe83r0l0"]
+
+[ext_resource type="Texture2D" uid="uid://d0njgy61nq5rq" path="res://img/chalkboard_800x600.jpg" id="1_vkkcw"]
+
+[node name="Background" type="TextureRect"]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_vkkcw")
