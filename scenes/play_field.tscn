@@ -1,7 +1,10 @@
-[gd_scene load_steps=3 format=3 uid="uid://h758j0enql28"]
+[gd_scene load_steps=4 format=3 uid="uid://h758j0enql28"]
 
 [ext_resource type="Script" path="res://scripts/play_field.gd" id="1_6u585"]
 [ext_resource type="Texture2D" uid="uid://84oq27kpw8ua" path="res://img/playBorder.png" id="1_epw4m"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rujy1"]
+size = Vector2(18, 434)
 
 [node name="PlayField" type="Node2D"]
 script = ExtResource("1_6u585")
@@ -12,3 +15,9 @@ offset_top = -8.0
 offset_right = 200.0
 offset_bottom = 424.0
 texture = ExtResource("1_epw4m")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-9, 207)
+shape = SubResource("RectangleShape2D_rujy1")

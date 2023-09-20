@@ -1,4 +1,5 @@
 extends RigidBody2D
+class_name Puyo
 
 enum PuyoColor { RED, YELLOW, GREEN, BLUE, PURPLE }
 
@@ -12,6 +13,7 @@ func _ready():
 		PuyoColor.GREEN: $AnimatedSprite2D.play("green")
 		PuyoColor.BLUE: $AnimatedSprite2D.play("blue")
 		PuyoColor.PURPLE: $AnimatedSprite2D.play("purple")
+	print('puyo ready')
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

@@ -3,6 +3,9 @@
 [ext_resource type="Script" path="res://scripts/Puyo.gd" id="1_4dvay"]
 [ext_resource type="Texture2D" uid="uid://j817ndpfwhuk" path="res://img/chalkpuyo_sprites.png" id="2_d65g3"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_m1wcj"]
+size = Vector2(32, 32)
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_f14bn"]
 atlas = ExtResource("2_d65g3")
 region = Rect2(4, 67, 32, 32)
@@ -171,21 +174,15 @@ animations = [{
 "speed": 2.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_m1wcj"]
-size = Vector2(32, 32)
-
 [node name="Puyo" type="RigidBody2D"]
 position = Vector2(16, 16)
 gravity_scale = 0.0
 script = ExtResource("1_4dvay")
 metadata/_edit_group_ = true
 
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_m1wcj")
+
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_xisse")
 animation = &"yellow"
-
-[node name="RigidBody2D" type="RigidBody2D" parent="."]
-gravity_scale = 0.0
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("RectangleShape2D_m1wcj")
