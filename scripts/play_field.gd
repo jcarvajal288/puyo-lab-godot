@@ -13,7 +13,6 @@ func _ready():
 	add_child(puyoPair)
 	puyoPair.position = STARTING_POSITION
 	puyoPair.destination = STARTING_POSITION
-	#await get_tree().create_timer(1.0).timeout
 	print('play field ready')
 	
 func isDestinationLegal(destination: Vector2):
@@ -21,7 +20,6 @@ func isDestinationLegal(destination: Vector2):
 	return destination.x >= 0 and destination.x <= 128
 	
 func checkForInput():
-	#print('checking for input')
 	var destination
 	if Input.is_action_just_pressed("move_right"):
 		destination = Vector2(puyoPair.position.x + TILE_SIZE, puyoPair.position.y)
@@ -36,6 +34,5 @@ func checkForInput():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	#print('processing')
 	if not puyoPair.isMoving():
 		checkForInput()
